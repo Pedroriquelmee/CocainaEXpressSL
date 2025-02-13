@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cocaina Express SL - Heroina</title>
+
+<style>
+    /* 12columns.css | Created by Katherine Kato | Released under the MIT license */
+    /* GitHub: https://kathykato.github.io/12columns/ */
+    @import url("https://fonts.googleapis.com/css?family=Pontano+Sans");
+
+    .container {
+        margin: auto;
+        padding: 0 1rem;
+        max-width: 71.25rem;
+        width: 100%;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+
+    .grid>[class*=column-] {
+        display: block;
+    }
+
+    .first {
+        order: -1;
+    }
+
+    .last {
+        order: 12;
+    }
+
+    .align-top {
+        align-items: start;
+    }
+
+    .align-center {
+        align-items: center;
+    }
+
+    .align-bottom {
+        align-items: end;
+    }
+
+    .column-xs-1 {
+        flex-basis: 8.3333333333%;
+        max-width: 8.3333333333%;
+    }
+
+    .column-xs-2 {
+        flex-basis: 16.6666666667%;
+        max-width: 16.6666666667%;
+    }
+
+    .column-xs-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .column-xs-4 {
+        flex-basis: 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+
+    .column-xs-5 {
+        flex-basis: 41.6666666667%;
+        max-width: 41.6666666667%;
+    }
+
+    .column-xs-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .column-xs-7 {
+        flex-basis: 58.3333333333%;
+        max-width: 58.3333333333%;
+    }
+
+    .column-xs-8 {
+        flex-basis: 66.6666666667%;
+        max-width: 66.6666666667%;
+    }
+
+    .column-xs-9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .column-xs-10 {
+        flex-basis: 83.3333333333%;
+        max-width: 83.3333333333%;
+    }
+
+    .column-xs-11 {
+        flex-basis: 91.6666666667%;
+        max-width: 91.6666666667%;
+    }
+
+    .column-xs-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    @media (min-width: 48rem) {
+        .column-sm-1 {
+            flex-basis: 8.3333333333%;
+            max-width: 8.3333333333%;
+        }
+
+        .column-sm-2 {
+            flex-basis: 16.6666666667%;
+            max-width: 16.6666666667%;
+        }
+
+        .column-sm-3 {
+            flex-basis: 25%;
+            max-width: 25%;
+        }
+
+        .column-sm-4 {
+            flex-basis: 33.3333333333%;
+            max-width: 33.3333333333%;
+        }
+
+        .column-sm-5 {
+            flex-basis: 41.6666666667%;
+            max-width: 41.6666666667%;
+        }
+
+        .column-sm-6 {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+
+        .column-sm-7 {
+            flex-basis: 58.3333333333%;
+            max-width: 58.3333333333%;
+        }
+
+        .column-sm-8 {
+            flex-basis: 66.6666666667%;
+            max-width: 66.6666666667%;
+        }
+
+        .column-sm-9 {
+            flex-basis: 75%;
+            max-width: 75%;
+        }
+
+        .column-sm-10 {
+            flex-basis: 83.3333333333%;
+            max-width: 83.3333333333%;
+        }
+
+        .column-sm-11 {
+            flex-basis: 91.6666666667%;
+            max-width: 91.6666666667%;
+        }
+
+        .column-sm-12 {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 62rem) {
+        .column-md-1 {
+            flex-basis: 8.3333333333%;
+            max-width: 8.3333333333%;
+        }
+
+        .column-md-2 {
+            flex-basis: 16.6666666667%;
+            max-width: 16.6666666667%;
+        }
+
+        .column-md-3 {
+            flex-basis: 25%;
+            max-width: 25%;
+        }
+
+        .column-md-4 {
+            flex-basis: 33.3333333333%;
+            max-width: 33.3333333333%;
+        }
+
+        .column-md-5 {
+            flex-basis: 41.6666666667%;
+            max-width: 41.6666666667%;
+        }
+
+        .column-md-6 {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+
+        .column-md-7 {
+            flex-basis: 58.3333333333%;
+            max-width: 58.3333333333%;
+        }
+
+        .column-md-8 {
+            flex-basis: 66.6666666667%;
+            max-width: 66.6666666667%;
+        }
+
+        .column-md-9 {
+            flex-basis: 75%;
+            max-width: 75%;
+        }
+
+        .column-md-10 {
+            flex-basis: 83.3333333333%;
+            max-width: 83.3333333333%;
+        }
+
+        .column-md-11 {
+            flex-basis: 91.6666666667%;
+            max-width: 91.6666666667%;
+        }
+
+        .column-md-12 {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 75rem) {
+        .column-lg-1 {
+            flex-basis: 8.3333333333%;
+            max-width: 8.3333333333%;
+        }
+
+        .column-lg-2 {
+            flex-basis: 16.6666666667%;
+            max-width: 16.6666666667%;
+        }
+
+        .column-lg-3 {
+            flex-basis: 25%;
+            max-width: 25%;
+        }
+
+        .column-lg-4 {
+            flex-basis: 33.3333333333%;
+            max-width: 33.3333333333%;
+        }
+
+        .column-lg-5 {
+            flex-basis: 41.6666666667%;
+            max-width: 41.6666666667%;
+        }
+
+        .column-lg-6 {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+
+        .column-lg-7 {
+            flex-basis: 58.3333333333%;
+            max-width: 58.3333333333%;
+        }
+
+        .column-lg-8 {
+            flex-basis: 66.6666666667%;
+            max-width: 66.6666666667%;
+        }
+
+        .column-lg-9 {
+            flex-basis: 75%;
+            max-width: 75%;
+        }
+
+        .column-lg-10 {
+            flex-basis: 83.3333333333%;
+            max-width: 83.3333333333%;
+        }
+
+        .column-lg-11 {
+            flex-basis: 91.6666666667%;
+            max-width: 91.6666666667%;
+        }
+
+        .column-lg-12 {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @supports (display: grid) {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto;
+        }
+
+        .grid>[class*=column-] {
+            margin: 0;
+            max-width: 100%;
+        }
+
+        .column-xs-1 {
+            grid-column-start: span 1;
+            grid-column-end: span 1;
+        }
+
+        .column-xs-2 {
+            grid-column-start: span 2;
+            grid-column-end: span 2;
+        }
+
+        .column-xs-3 {
+            grid-column-start: span 3;
+            grid-column-end: span 3;
+        }
+
+        .column-xs-4 {
+            grid-column-start: span 4;
+            grid-column-end: span 4;
+        }
+
+        .column-xs-5 {
+            grid-column-start: span 5;
+            grid-column-end: span 5;
+        }
+
+        .column-xs-6 {
+            grid-column-start: span 6;
+            grid-column-end: span 6;
+        }
+
+        .column-xs-7 {
+            grid-column-start: span 7;
+            grid-column-end: span 7;
+        }
+
+        .column-xs-8 {
+            grid-column-start: span 8;
+            grid-column-end: span 8;
+        }
+
+        .column-xs-9 {
+            grid-column-start: span 9;
+            grid-column-end: span 9;
+        }
+
+        .column-xs-10 {
+            grid-column-start: span 10;
+            grid-column-end: span 10;
+        }
+
+        .column-xs-11 {
+            grid-column-start: span 11;
+            grid-column-end: span 11;
+        }
+
+        .column-xs-12 {
+            grid-column-start: span 12;
+            grid-column-end: span 12;
+        }
+
+        @media (min-width: 48rem) {
+            .column-sm-1 {
+                grid-column-start: span 1;
+                grid-column-end: span 1;
+            }
+
+            .column-sm-2 {
+                grid-column-start: span 2;
+                grid-column-end: span 2;
+            }
+
+            .column-sm-3 {
+                grid-column-start: span 3;
+                grid-column-end: span 3;
+            }
+
+            .column-sm-4 {
+                grid-column-start: span 4;
+                grid-column-end: span 4;
+            }
+
+            .column-sm-5 {
+                grid-column-start: span 5;
+                grid-column-end: span 5;
+            }
+
+            .column-sm-6 {
+                grid-column-start: span 6;
+                grid-column-end: span 6;
+            }
+
+            .column-sm-7 {
+                grid-column-start: span 7;
+                grid-column-end: span 7;
+            }
+
+            .column-sm-8 {
+                grid-column-start: span 8;
+                grid-column-end: span 8;
+            }
+
+            .column-sm-9 {
+                grid-column-start: span 9;
+                grid-column-end: span 9;
+            }
+
+            .column-sm-10 {
+                grid-column-start: span 10;
+                grid-column-end: span 10;
+            }
+
+            .column-sm-11 {
+                grid-column-start: span 11;
+                grid-column-end: span 11;
+            }
+
+            .column-sm-12 {
+                grid-column-start: span 12;
+                grid-column-end: span 12;
+            }
+        }
+
+        @media (min-width: 62rem) {
+            .column-md-1 {
+                grid-column-start: span 1;
+                grid-column-end: span 1;
+            }
+
+            .column-md-2 {
+                grid-column-start: span 2;
+                grid-column-end: span 2;
+            }
+
+            .column-md-3 {
+                grid-column-start: span 3;
+                grid-column-end: span 3;
+            }
+
+            .column-md-4 {
+                grid-column-start: span 4;
+                grid-column-end: span 4;
+            }
+
+            .column-md-5 {
+                grid-column-start: span 5;
+                grid-column-end: span 5;
+            }
+
+            .column-md-6 {
+                grid-column-start: span 6;
+                grid-column-end: span 6;
+            }
+
+            .column-md-7 {
+                grid-column-start: span 7;
+                grid-column-end: span 7;
+            }
+
+            .column-md-8 {
+                grid-column-start: span 8;
+                grid-column-end: span 8;
+            }
+
+            .column-md-9 {
+                grid-column-start: span 9;
+                grid-column-end: span 9;
+            }
+
+            .column-md-10 {
+                grid-column-start: span 10;
+                grid-column-end: span 10;
+            }
+
+            .column-md-11 {
+                grid-column-start: span 11;
+                grid-column-end: span 11;
+            }
+
+            .column-md-12 {
+                grid-column-start: span 12;
+                grid-column-end: span 12;
+            }
+        }
+
+        @media (min-width: 75rem) {
+            .column-lg-1 {
+                grid-column-start: span 1;
+                grid-column-end: span 1;
+            }
+
+            .column-lg-2 {
+                grid-column-start: span 2;
+                grid-column-end: span 2;
+            }
+
+            .column-lg-3 {
+                grid-column-start: span 3;
+                grid-column-end: span 3;
+            }
+
+            .column-lg-4 {
+                grid-column-start: span 4;
+                grid-column-end: span 4;
+            }
+
+            .column-lg-5 {
+                grid-column-start: span 5;
+                grid-column-end: span 5;
+            }
+
+            .column-lg-6 {
+                grid-column-start: span 6;
+                grid-column-end: span 6;
+            }
+
+            .column-lg-7 {
+                grid-column-start: span 7;
+                grid-column-end: span 7;
+            }
+
+            .column-lg-8 {
+                grid-column-start: span 8;
+                grid-column-end: span 8;
+            }
+
+            .column-lg-9 {
+                grid-column-start: span 9;
+                grid-column-end: span 9;
+            }
+
+            .column-lg-10 {
+                grid-column-start: span 10;
+                grid-column-end: span 10;
+            }
+
+            .column-lg-11 {
+                grid-column-start: span 11;
+                grid-column-end: span 11;
+            }
+
+            .column-lg-12 {
+                grid-column-start: span 12;
+                grid-column-end: span 12;
+            }
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Pontano Sans", sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        color: #888;
+        background: #fff;
+        text-rendering: optimizeLegibility;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    ul li {
+        margin: 0 1.75rem 0 0;
+    }
+
+    a {
+        color: #888;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    a:hover {
+        color: #333;
+    }
+
+    a.active {
+        color: #333;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: #333;
+        font-weight: normal;
+        margin: 1.75rem 0 1rem 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.125rem;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        margin: 1rem 0 0.5rem 0;
+    }
+
+    section {
+        display: block;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav li {
+        font-size: 1.125rem;
+        margin: 0;
+    }
+
+    .flex-nav ul {
+        position: absolute;
+        z-index: 1;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        left: 0;
+        padding: 1rem;
+        background: #fff;
+        text-align: center;
+    }
+
+    .flex-nav ul.active {
+        display: flex;
+    }
+
+    .flex-nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .toggle-nav {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.125rem;
+        line-height: 1.7;
+        margin: 1rem 0;
+    }
+
+    .toggle-nav i {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        margin: 0 0 0 0.5rem;
+    }
+
+    #highlight {
+        color: #333;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+    }
+
+    .price {
+        margin: 0;
+    }
+
+    .breadcrumb-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 1rem 0 0 0;
+        list-style: none;
+    }
+
+    .breadcrumb-list li {
+        font-size: 0.85rem;
+        letter-spacing: 0.125rem;
+        text-transform: uppercase;
+    }
+
+    .breadcrumb-item.active {
+        color: #333;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: "/";
+        display: inline-block;
+        padding: 0 0.5rem;
+        color: #d5d5d5;
+    }
+
+    .description {
+        border-top: 0.0625rem solid #e3dddd;
+        margin: 2rem 0;
+        padding: 1rem 0 0 0;
+    }
+
+    .add-to-cart {
+        position: relative;
+        display: inline-block;
+        background: #3e3e3f;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        padding: 1.25rem 2.5rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        transform: translateZ(0);
+        transition: color 0.3s ease;
+        letter-spacing: 0.0625rem;
+    }
+
+    .add-to-cart:hover::before {
+        transform: scaleX(1);
+    }
+
+    .add-to-cart::before {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #565657;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition: transform 0.3s ease-out;
+    }
+
+    .container {
+        margin: auto;
+        padding: 0 1rem;
+        max-width: 75rem;
+        width: 100%;
+    }
+
+    .grid>[class*=column-] {
+        padding: 1rem;
+    }
+
+    .grid.menu,
+    .grid.product {
+        border-bottom: 0.0625rem solid #e3dddd;
+    }
+
+    .grid.menu>[class*=column-] {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+    .grid.product {
+        padding: 0 0 1.5rem 0;
+    }
+
+    .grid.second-nav>[class*=column-] {
+        padding: 0.5rem 1rem;
+    }
+
+    footer {
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .product-image {
+        display: none;
+    }
+
+    .image-list li {
+        margin: 0;
+    }
+
+    @media (min-width: 62rem) {
+
+        .product-image img,
+        .image-list img {
+            width: 100%;
+        }
+
+        .product-image {
+            display: block;
+        }
+
+        .product-image img {
+            height: 52vh;
+        }
+
+        .product-image img.active {
+            display: block;
+            margin: 0 0 0.75rem 0;
+        }
+
+        .image-list {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .image-list li {
+            margin: 0 0.75rem 0 0;
+            flex-basis: 100%;
+        }
+
+        .image-list li:nth-child(3) {
+            margin: 0;
+        }
+
+        .image-list img {
+            height: 10rem;
+            width: 100%;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+        }
+
+        .image-list img:hover {
+            opacity: 0.7;
+        }
+
+        nav ul {
+            justify-content: flex-end;
+        }
+
+        .toggle-nav {
+            display: none;
+        }
+
+        .flex-nav {
+            display: block;
+        }
+
+        .flex-nav ul {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            justify-content: flex-end;
+        }
+
+        .flex-nav ul li {
+            font-size: 1.125rem;
+            margin: 0 1.5rem 0 0;
+        }
+
+        .flex-nav ul li:nth-child(4) {
+            margin: 0;
+        }
+    }
+
+    @-webkit-keyframes fadeImg {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeImg {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Estilos para el icono de carrito */
+    #carrito-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: #333;
+    }
+
+    /* Estilos para el contenedor del carrito */
+    #carrito {
+        display: none;
+        position: fixed;
+        top: 60px;
+        /* Ajusta la posición según sea necesario */
+        right: 20px;
+        /* Ajusta la posición según sea necesario */
+        width: 250px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 1000;
+        /* Asegura que el carrito esté en la parte superior */
+    }
+
+    /* Estilos para el menú desplegable */
+    .account-dropdown {
+        position: relative;
+    }
+
+    .account-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .account-dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .account-dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .account-dropdown:hover .account-dropdown-content {
+        display: block;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 10px;
+        background-color: #f8f9fa;
+    }
+
+    .footer p {
+        margin: 0;
+        font-size: 14px;
+        color: #000000;
+    }
+    .navbar {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%;
+            right: 0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+.cart:hover .dropdown-content {
+    display: block;
+}
+</style>
+<nav class="flex-nav">
+    <div class="container">
+        <div class="grid menu">
+            <div class="column-xs-8 column-md-6">
+                <a href="index.html">COCAINAEXPRESSSL</a></li>
+            </div>
+            <div class="column-xs-4 column-md-6">
+                <a href="#" class="toggle-nav">Menu <i class="ion-navicon-round"></i></a>
+                <ul>
+                    <li class="nav-item"><a href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a href="infoempresa.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="reseñas.html">Reseñas</a></li>
+                    <div class="dropdown">
+                        <a class="dropdown-btn" href="#">Cuenta</a>
+                        <div class="dropdown-content">
+                            <a href="index.html">Iniciar Sesión</a>
+                            <a href="index.html">Registrarse</a>
+                        </div>
+                    </div>
+                    <div class="cart" onclick="toggleCart()">
+                        <img src="https://imgs.search.brave.com/v0HBR_XY6726hGRYIaL8_Gr_PzeALyAZ55vR3fQW6TI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzEzMjExNC9p/c29sYXRlZC9wcmV2/aWV3LzUzNjcyMDJh/ZDRkZDExNzI1NTQ0/Y2IzMDA4MDQ5Zjk2/LWljb25vLXBsYW5v/LWRlLWNhcnJpdG8t/ZGUtY29tcHJhcy5w/bmc"
+                            alt="Carrito" />
+                        <span id="cartCount">0</span>
+                        <div id="cartDropdown" class="dropdown-content">
+                            <!-- Contenido del carrito -->
+                            <div id="cartItems"></div>
+                            <div id="totalPrice" class="total"></div>
+                        </div>
+                    </div>
+</nav>
+<main>
+    <div class="container">
+        <div class="grid second-nav">
+            <div class="column-xs-12">
+                <div class="grid product">
+                    <div class="column-xs-12 column-md-7">
+                        <div class="product-gallery">
+                            <div class="product-image">
+                                <img class="active" src="cannabis-removebg-preview.png" width="10%">
+                            </div>
+                            <ul class="image-list">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column-xs-12 column-md-5">
+                        <h1>Cannabis</h1>
+                        <h2>20,00€</h2>
+                        <div class="description">
+                            <p>El Cannabis es una planta utilizada para fines recreativos y medicinales. Contiene
+                                compuestos
+                                llamados cannabinoides, como el THC y el CBD. Antes de comprar, es importante conocer la
+                                legislación
+                                local y las variedades disponibles.</p>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Cannabis')">Añadir al carrito</button>
+                </div>
+                </div>
+                <div class="grid related-products">
+                    <div class="column-xs-12">
+                    </div>
+                    <div class="column-xs-12">
+                        <h3>Productos relacionados</h3>
+                    </div>
+                    <div class="column-xs-12 column-md-4">
+                        <img src="cannabis-removebg-preview.png" width="250">
+                        <h4>Cannabis</h4>
+                        <p class="price">20,00€</p>
+                    </div>
+                    <div class="column-xs-12 column-md-4">
+                        <img src="depositphotos_11543641-stock-photo-mephedrone-meow-on-counter-top-removebg-preview.png"
+                            width="250">
+                        <h4>Anfetamina</h4>
+                        <p class="price">10,00€</p>
+                    </div>
+                    <div class="column-xs-12 column-md-4">
+                        <img src="bote-de-fentanilo_787bd206_1248581974_231017142957_1280x721-removebg-preview.png">
+                        <h4>Fentanilo</h4>
+                        <p class="price">40,00€</p>
+                    </div>
+                </div>
+            </div>
+</main>
+<footer>
+    <div class="footer">
+        <p><small style="font-size: 12px;"><strong>&copy; 2024 Cocaina Express SL. Pedro José Riquelme
+                    Guerrero</strong></small></p>
+    </div>
+</footer>
+<script>
+    const activeImage = document.querySelector(".product-image .active");
+    const productImages = document.querySelectorAll(".image-list img");
+    const navItem = document.querySelector('a.toggle-nav');
+
+    function changeImage(e) {
+        activeImage.src = e.target.src;
+    }
+
+    function toggleNavigation() {
+        this.nextElementSibling.classList.toggle('active');
+    }
+
+    productImages.forEach(image => image.addEventListener("click", changeImage));
+    navItem.addEventListener('click', toggleNavigation);
+// Función para cargar el carrito desde el almacenamiento local al cargar la página
+window.onload = function() {
+    updateCart(); // Cargar el carrito al cargar la página
+};
+
+// Función para limpiar el carrito al cerrar la pestaña o la ventana
+window.addEventListener('beforeunload', function(event) {
+    if (!isNavigatingAway) {
+        localStorage.removeItem('cart');
+    }
+});
+
+var isNavigatingAway = false;
+
+document.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+        isNavigatingAway = true;
+    });
+});
+
+function addToCart(productName) {
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+    // Verificar si el producto ya está en el carrito
+    var existingProduct = cart.find(function(item) {
+        return item.name === productName;
+    });
+    if (existingProduct) {
+        existingProduct.quantity++; // Incrementar la cantidad
+    } else {
+        cart.push({ name: productName, price: getProductPrice(productName), quantity: 1 });
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCart(); // Actualizar el contenido del carrito
+}
+
+function getProductPrice(productName) {
+    // Lógica para obtener el precio del producto según su nombre
+    // Esto es solo un ejemplo, debes reemplazarlo con tu lógica real
+    switch (productName) {
+        case 'Cannabis':
+            return 20;
+        case 'Heroína':
+            return 30;
+        case 'Éxtasis':
+            return 25;
+        case 'Cocaina':
+            return 50;
+        case 'Metanfetamina':
+            return 20;
+        case 'Anfetamina': 
+            return 10;
+        case 'LSD':
+            return 25;
+        case 'Etorfina':
+            return 40;
+        case 'Fentanilo':
+            return 40;
+    }
+}
+
+function updateCart() {
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+    var cartItemsContainer = document.getElementById('cartItems');
+    var totalPriceContainer = document.getElementById('totalPrice');
+    var cartCount = document.getElementById('cartCount');
+    var totalPrice = 0;
+    var totalItems = 0; // Inicializar contador de productos
+    cartItemsContainer.innerHTML = ''; // Limpiar el contenido anterior
+    cart.forEach(function(item) {
+        var itemDiv = document.createElement('div');
+        itemDiv.classList.add('dropdown-item');
+        itemDiv.textContent = item.name + ' x ' + item.quantity; // Mostrar la cantidad
+        cartItemsContainer.appendChild(itemDiv);
+        totalPrice += item.price * item.quantity;
+        totalItems += item.quantity; // Incrementar contador de productos
+    });
+    totalPriceContainer.textContent = 'Total: €' + totalPrice.toFixed(2);
+    cartCount.textContent = totalItems; // Mostrar la cantidad total de productos en el carrito
+}
+
+function toggleCart() {
+    var cartDropdown = document.getElementById('cartDropdown');
+    if (cartDropdown.style.display === 'block') {
+        cartDropdown.style.display = 'none';
+    } else {
+        cartDropdown.style.display = 'block';
+        updateCart(); // Actualizar el contenido del carrito al mostrar
+    }
+}
+
+
+</script>
+
+</html>

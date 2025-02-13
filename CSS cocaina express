@@ -1,0 +1,61 @@
+.product {
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 0 20px 40px;
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.products {
+    padding: auto;
+}
+
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product img {
+    width: 100%;
+    height: auto  ;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.precio {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+-------------------------
+ <section id="casual-watches" class="products">
+        <div class="container">
+            <h2>Relojes Casuales</h2>
+            <div class="product">
+                <a href="Casual 1.html">                
+                <img src="../Imagenes/casual 1.png" alt="Reloj Casual 1">
+                </a>
+                <h3>Casio </h3>
+                <h4>MTP-B145D-3AVEF Reloj Casio Timeless Collection Esfera Verde</h4>
+                <p class="precio">70'99€</p>
+                <button class="add-to-cart" onclick="addToCart('casual 1', 70.99)">Añadir al carrito</button>
+            </div>
+
+            <!-- https://www.elcorteingles.es/moda-hombre/A46391152-reloj-hombre-casio-collection-mtp1302pd3avef-de-acero/?stype=text_box&parentCategoryId=999.39072454013&color=Plata -->
+
+            <div class="product">
+                <a href="Casual 2.html">  
+                <img src="../Imagenes/casual 2.png" alt="Reloj Casual 2">
+                </a>
+                <h3>Tommy Hilfiger</h3>
+                <h4>Reloj de hombre Tommy Hilfiger, Becker 1710512 de malla de acero</h4>
+                <p class="precio">150€</p>
+                <button class="add-to-cart" onclick="addToCart('Casio Casual 1', 70.99)">Añadir al carrito</button>
+            </div>

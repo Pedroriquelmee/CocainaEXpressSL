@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocaina Express SL - Bienvenida</title>
+    <link rel="icon" type="image/png" href="1-removebg-preview.png">
+
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://imgs.search.brave.com/UnOg1yF5LLykC7iBbFthw4Sp6ukeceN1xhDrE9g77zo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/OTcyNTA2ODE5NjAt/ZWYwNDZjMDhhNTZl/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4Tkh4OFpt/OXVaRzl6SlRJd1pH/VWxNakJ3YkdGdWRH/RnpmR1Z1ZkRCOGZE/QjhmSHd3');
+            /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4CAF50;
+        }
+
+        .logo {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Bienvenido a Cocaina Express SL</h1>
+        <img src="1-removebg-preview.png" alt="Logo empresa" width="400" />
+        <!-- Página de bienvenida -->
+        <div id="welcomePage">
+            <h2>Bienvenido</h2>
+
+            <p>Por favor, inicia sesión o entra como invitado para acceder al contenido.</p>
+            <button class="button" onclick="redirectToCatalog()">Entrar como invitado</button>
+            <button class="button" onclick="showRegister()">Registrarse</button>
+            <button class="button" onclick="showLogin()">Iniciar sesión</button>
+        </div>
+
+        <!-- Formulario de inicio de sesión -->
+        <form id="loginForm" action="productos.html" style="display: none;">
+            <h2>Iniciar sesión</h2>
+            <input type="text" id="loginUsername" placeholder="Nombre de usuario" required>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+            <input type="submit" value="Iniciar sesión">
+            <button class="button" onclick="goBack()">Retroceder</button>
+        </form>
+
+        <!-- Formulario de registro -->
+        <form id="registerForm" action="productos.html" style="display: none;">
+            <h2>Registrarse</h2>
+            <input type="text" id="username" placeholder="Nombre de usuario" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <input type="submit" value="Registrarse">
+            <button class="button" onclick="goBack()">Retroceder</button>
+        </form>
+        <div class="footer">
+            <p><small style="font-size: 12px;"><strong>&copy; 2024 Cocaina Express SL. Pedro José Riquelme
+                        Guerrero</strong></small></p>
+        </div>
+    </div>
+
+
+    <script>
+        function showLogin() {
+            document.getElementById("welcomePage").style.display = "none";
+            document.getElementById("loginForm").style.display = "block";
+        }
+
+        function showRegister() {
+            document.getElementById("welcomePage").style.display = "none";
+            document.getElementById("registerForm").style.display = "block";
+        }
+
+        function redirectToCatalog() {
+            window.location.href = "productos.html";
+        }
+
+        function goBack() {
+            window.location.href = "index.html"; // Redirige al inicio
+        }
+    </script>
+
+</body>
+
+</html>
